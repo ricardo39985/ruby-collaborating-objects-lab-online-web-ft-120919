@@ -1,8 +1,8 @@
 class MP3Importer
   # binding.pry
-  def initialize(direct)
+  def initialize(path)
 
-    @files = Dir.entries(direct).find_all { |e|  e.length > 4}.flatten
+    @files = Dir.entries(path).find_all { |e|  e.length > 4}.flatten
     # binding.pry
     return @files
   end
