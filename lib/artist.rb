@@ -30,6 +30,6 @@ class Artist
     Song.all.find_all{|song|song.artist == self}.each { |e| puts e.name }
   end
   def name=(artist_name)
-    Artist.find_or_create_by_name(artist_name)
+    @name = artist_name
   end
 end
