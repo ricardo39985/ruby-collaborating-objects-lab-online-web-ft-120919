@@ -5,7 +5,7 @@ class MP3Importer
 
     @files = Dir.entries(path).find_all { |e|  e.length > 4}.flatten
     # binding.pry
-    path
+    @path
   end
   def files
     @files
