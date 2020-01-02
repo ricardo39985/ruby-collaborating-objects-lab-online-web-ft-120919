@@ -25,7 +25,7 @@ class Song
         self.artist
 
 
-      binding.pry
+      # binding.pry
     end
     # binding.pry
 
