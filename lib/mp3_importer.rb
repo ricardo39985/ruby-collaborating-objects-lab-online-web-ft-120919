@@ -4,7 +4,8 @@ class MP3Importer
 
     @files = Dir.entries(direct).find_all { |e|  e.length > 4}.flatten
     direct.to_s
-    binding.pry
+    direct
+    # binding.pry
 
   end
   def files
