@@ -9,9 +9,6 @@ class MP3Importer
   def files
     @files
   end
-  def path
-
-  end
   def import
     @files.map { |file|Song.new_by_filename(file.split(" - ")[1])  }
 
