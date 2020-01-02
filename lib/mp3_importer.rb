@@ -3,8 +3,8 @@ class MP3Importer
   def initialize(direct)
 
     @files = Dir.entries(direct).find_all { |e|  e.length > 4}.flatten
-    direct.to_s
     direct
+
     # binding.pry
 
   end
