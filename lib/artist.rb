@@ -26,6 +26,7 @@ class Artist
       self.new(artist_name)
       # binding.pry
     end
+    binding.pry
   end
   def print_songs
     Song.all.find_all{|song|song.artist == self}.each { |e| puts e.name }
@@ -33,4 +34,5 @@ class Artist
   def name=(artist_name)
     @name = artist_name
   end
+
 end
