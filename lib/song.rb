@@ -21,10 +21,10 @@ class Song
       # binding.pry
       # Song.all.find_all{|song|song.artist == artist_name}
     else
-        return self.artist = Artist.new(artist_name)
+        self.artist = Artist.new(artist_name)
 
 
-      # binding.pry
+      binding.pry
     end
     # binding.pry
 
