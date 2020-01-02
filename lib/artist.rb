@@ -18,15 +18,15 @@ class Artist
   end
   def self.find_or_create_by_name(artist_name)
     # binding.pry
-    if @@all.any? { |e| e.artist == artist_name }
-      @@all.select {|e| e.name == artist_name}
+    if @@all.any? { |artist| artist.artist == artist_name }
+      @@all.select {|artist| artist.name == artist_name}
       # binding.pry
-      Song.all.find_all{|song|song.artist == artist_name}
+      # Song.all.find_all{|song|song.artist == artist_name}
     else
-      self.new(artist_name)
+       return self.new(artist_name)
       # binding.pry
     end
-    binding.pry
+    # binding.pry
   end
   def print_songs
     Song.all.find_all{|song|song.artist == self}.each { |e| puts e.name }
