@@ -21,8 +21,8 @@ class Song
       # binding.pry
       # Song.all.find_all{|song|song.artist == artist_name}
     else
-        self.artist = Artist.new(artist_name)
-        self
+        return self.artist = Artist.new(artist_name)
+
 
       # binding.pry
     end
